@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fideicomiso: Proyecto Inmobiliario Monte Alegre</title>
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Paleta de Colores y Estilos Base de la Infografía ALYOCA */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1B263B; /* Azul oscuro suave */
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 2rem 1rem;
+        }
+        .main-bg {
+            background-color: #f2f2f2; /* Gris claro / Fondo del documento */
+        }
+        .main-text {
+            color: #262a36; /* Texto oscuro sobre fondo claro */
+        }
+        .header-text {
+            color: #ffffff; /* Blanco puro / Texto de encabezados */
+        }
+        .card-shadow {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.1);
+        }
+        /* Colores de Acento */
+        .color-accent-dark { background-color: #f8cb1d; } /* Amarillo oscuro */
+        .color-accent-bright { background-color: #ffcc08; } /* Amarillo brillante */
+        .border-critical-warn { border-color: #f8cb1d; }
+        .text-critical-warn { color: #f8cb1d; }
+        
+        /* Estilos específicos para las tarjetas oscuras (Conclusión, Riesgo) */
+        .dark-card-bg { background-color: #262a36; } /* Fondo oscuro */
+        .dark-card-title-text { color: #ffcc08; } /* Título amarillo brillante */
+        .dark-card-content-text { color: #ffffff; } /* Contenido blanco */
+        .dark-card-border { border-color: #ffcc08; } /* Borde amarillo brillante (para Conclusión) */
+        .border-critical-dark-warn { border-color: #f8cb1d; } /* Borde amarillo oscuro (para Riesgos) */
+
+        /* Estilo para las tablas internas (manteniendo el nuevo look) */
+        .tabla-fiduciaria th, .tabla-fiduciaria td {
+            @apply px-4 py-2 border-b border-gray-700 dark-card-content-text;
+        }
+        .tabla-fiduciaria thead {
+            @apply text-xs uppercase dark-card-title-text;
+        }
+        .tabla-fiduciaria tbody tr:nth-child(odd) {
+            @apply bg-opacity-10 bg-white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="w-full max-w-5xl main-bg rounded-xl p-8 lg:p-12 card-shadow">
+        <!-- Título Principal -->
+        <header class="text-center mb-10">
+            <!-- Título Principal (Solo Contrato) -->
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold main-text leading-tight">
+                CONTRATO DE FIDEICOMISO
+            </h1>
+            <!-- Título del Proyecto -->
+            <h2 class="text-2xl sm:text-3xl font-bold main-text opacity-90 mt-1">
+                PROYECTO MONTE ALEGRE
+            </h2>
+            <!-- Subtítulo de contexto -->
+            <p class="text-lg font-semibold main-text opacity-75 mt-2">
+                RESUMEN DE ESTRUCTURA Y TÉRMINOS
+            </p>
+            <p class="text-sm main-text opacity-50 mt-4">
+                Guadalajara, Jalisco | Fideicomiso de Administración Inmobiliaria
+            </p>
+        </header>
+
+        <!-- Resumen Ejecutivo / Conclusión General - FONDO OSCURO -->
+        <div class="mb-10 p-6 dark-card-bg border-l-4 dark-card-border rounded-lg card-shadow">
+            <p class="text-xl font-bold mb-2 dark-card-title-text">RESUMEN EJECUTIVO Y OBJETIVO CENTRAL</p>
+            <p class="dark-card-content-text opacity-85">
+                El objetivo es permitir que <strong>OCEANSIDE M (Fideicomitente B)</strong> desarrolle un proyecto de 19 unidades habitacionales y una comercial sobre el terreno aportado por <strong>JOSÉ LUIS BARAJAS GONZÁLEZ (Fideicomitente A)</strong>. El desarrollador asume el control operativo total, costos y riesgos, mientras que la Fiduciaria (Banco Inmobiliario Mexicano) tiene un rol esencialmente administrativo y pasivo.
+            </p>
+        </div>
+
+        <!-- Sección de Factores Positivos / Estructura del Patrimonio -->
+        <h3 class="text-2xl font-bold main-text mb-6 border-b-2 border-critical-warn pb-2 flex items-center">
+            <!-- Icono de Billetes para "Factores Positivos Clave" -->
+            <svg class="w-6 h-6 mr-2 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V6m0 6v-1m0 1v3m0 0h.01M12 18H5.938A2 2 0 014 16.062V5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2h-6m-6 2l1.378-2.529c.281-.514.984-.514 1.265 0L12 20h9"></path></svg>
+            Factores Clave y Patrimonio
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+
+            <!-- Tarjeta 1: Aporte y Contraprestación (A) -->
+            <div class="color-accent-bright p-6 rounded-xl header-text card-shadow flex flex-col justify-between">
+                <div class="text-4xl mb-4">
+                    <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2z"></path></svg>
+                </div>
+                <p class="font-bold text-xl mb-2">Compensación al Fideicomitente A</p>
+                <p class="text-sm opacity-90">Recibirá <strong class="text-2xl">$4.8M MXN</strong> pagados por el Fideicomitente B, contra la constitución del régimen de condominio. Pago fuera del patrimonio fiduciario.</p>
+            </div>
+
+            <!-- Tarjeta 2: Control Operativo (B) -->
+            <div class="color-accent-bright p-6 rounded-xl header-text card-shadow flex flex-col justify-between">
+                <div class="text-4xl mb-4">
+                    <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </div>
+                <p class="font-bold text-xl mb-2">Control y Costos Totales</p>
+                <p class="text-sm opacity-90">OCEANSIDE M es responsable de <strong>todos</strong> los costos, riesgos, obligaciones fiscales/laborales y la ejecución integral del proyecto.</p>
+            </div>
+
+            <!-- Tarjeta 3: Inmueble y Estado Legal -->
+            <div class="color-accent-bright p-6 rounded-xl header-text card-shadow flex flex-col justify-between">
+                <div class="text-4xl mb-4">
+                    <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m4 0h6m-6 0h-2m8 0h2M7 11h2m-2 4h2m4-4h2m-2 4h2m-4-4h2m-2 4h2"></path></svg>
+                </div>
+                <p class="font-bold text-xl mb-2">Inmueble Base (Patrimonio)</p>
+                <p class="text-sm opacity-90">Terreno de 336m² en Guadalajara, Jalisco. Se declara <strong>libre de todo gravamen</strong> al momento de la constitución del fideicomiso.</p>
+            </div>
+        </div>
+
+        <!-- Sección de Fines y Mecanismos de Instrucción -->
+        <h3 class="text-2xl font-bold main-text mb-6 border-b-2 border-critical-warn pb-2 flex items-center">
+             <!-- Icono de Tareas para "Fines del Fideicomiso" -->
+            <svg class="w-6 h-6 mr-2 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+            Fines del Contrato y Operación (Cláusula Sexta)
+        </h3>
+        <div class="dark-card-bg p-6 rounded-xl main-text mb-10 space-y-4">
+            <ol class="list-decimal list-inside ml-4 space-y-2 dark-card-content-text opacity-90 text-sm">
+                <li><strong class="dark-card-title-text font-semibold">Recepción y Conservación:</strong> Mantener la propiedad fiduciaria del inmueble.</li>
+                <li><strong class="dark-card-title-text font-semibold">Posesión:</strong> Permitir al Depositario (Oceanside M) la posesión derivada para desarrollo.</li>
+                <li><strong class="dark-card-title-text font-semibold">Desarrollo y Construcción:</strong> Permitir al Fideicomitente B realizar las obras y mejoras.</li>
+                <li><strong class="dark-card-title-text font-semibold">Garantía de Financiamiento:</strong> Otorgar el patrimonio en garantía para créditos de Fideicomitente B.</li>
+                <li><strong class="dark-card-title-text font-semibold">Comercialización:</strong> Permitir al Fideicomitente B promover y celebrar promesas de venta.</li>
+                <li><strong class="dark-card-title-text font-semibold">Transmisión de Propiedad:</strong> Transmitir unidades a compradores finales (previa instrucción del Fideicomitente B).</li>
+                <li><strong class="dark-card-title-text font-semibold">Actos Jurídicos:</strong> Constituir Régimen de Condominio, subdivisiones, etc.</li>
+                <li><strong class="dark-card-title-text font-semibold">Reversión de Propiedad:</strong> Revertir total o parcialmente al Fideicomitente A bajo condiciones específicas.</li>
+                <li><strong class="dark-card-title-text font-semibold">Instrucciones:</strong> El Fideicomitente B tiene la facultad principal de girar instrucciones.</li>
+                <li><strong class="dark-card-title-text font-semibold">Excepción:</strong> La transmisión de unidades sin garantía de crédito requiere instrucción conjunta de A y B.</li>
+            </ol>
+        </div>
+
+
+        <!-- Sección de Riesgos (Atención) -->
+        <h3 class="text-2xl font-bold main-text mb-6 border-b-2 border-critical-warn pb-2 flex items-center">
+            <!-- Icono de Alert Triangle para "Puntos de Riesgo y Atención" -->
+            <svg class="w-6 h-6 mr-2 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+            Puntos de Riesgo y Financiamiento
+        </h3>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+            <!-- Tarjeta 4: Limitaciones Fiduciarias (Riesgo Operativo) - FONDO OSCURO -->
+            <div class="p-6 dark-card-bg border-l-4 border-critical-dark-warn rounded-lg card-shadow">
+                <div class="flex items-center mb-3">
+                    <span class="text-critical-warn text-3xl mr-3 font-extrabold">!</span>
+                    <p class="text-xl font-bold dark-card-title-text">Limitación de Responsabilidad (Fiduciaria)</p>
+                </div>
+                <ul class="list-disc list-inside ml-4 dark-card-content-text opacity-85 text-sm space-y-1">
+                    <li>La Fiduciaria <strong>NO</strong> es responsable por la calidad de obra ni vicios ocultos.</li>
+                    <li><strong>NO</strong> verifica el cumplimiento de leyes de desarrollo urbano.</li>
+                    <li><strong>NO</strong> funge como patrón o empleador (exclusión de responsabilidad laboral).</li>
+                    <li>Su obligación en litigios es solo otorgar poderes, <strong>sin asumir costos</strong>.</li>
+                </ul>
+            </div>
+
+            <!-- Tarjeta 5: Costos Fiduciarios y Penalización - FONDO OSCURO -->
+            <div class="p-6 dark-card-bg border-l-4 border-critical-dark-warn rounded-lg card-shadow">
+                <div class="flex items-center mb-3">
+                    <span class="text-critical-warn text-2xl mr-3 font-extrabold">$</span>
+                    <p class="text-xl font-bold dark-card-title-text">Costos y Cláusula de Penalización</p>
+                </div>
+                <div class="dark-card-content-text opacity-85 text-xs">
+                    <p class="font-medium mb-2 text-sm dark-card-title-text">Honorarios Anuales Clave (Responsabilidad de Fideicomitente B):</p>
+                    <table class="w-full text-left tabla-fiduciaria">
+                        <thead>
+                            <tr>
+                                <th>Concepto</th>
+                                <th class="text-right">Monto Base + IVA</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Firma Inicial</td>
+                                <td class="text-right">$45,000.00</td>
+                            </tr>
+                            <tr>
+                                <td>Administración Anual</td>
+                                <td class="text-right">$120,000.00</td>
+                            </tr>
+                            <tr>
+                                <td>Transmisión por Unidad</td>
+                                <td class="text-right">$2,000.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mt-4 p-2 color-accent-dark text-black rounded font-bold text-sm">
+                    ⚠️ PENALIZACIÓN: Los honorarios anuales se <strong>duplicarán</strong> automáticamente en caso de demanda o juicio contra la Fiduciaria.
+                </div>
+            </div>
+        </div>
+        
+        <!-- Pie de página / Fuente -->
+        <footer class="mt-12 pt-6 border-t border-gray-700 text-center">
+            
+            <div class="flex flex-wrap justify-center items-center space-x-4 mb-4">
+                <!-- Se elimina la referencia a la Jurisdicción -->
+                
+                <div class="main-text opacity-85 font-semibold flex items-center">
+                    <span class="text-yellow-500 text-2xl mr-2">
+                            <!-- Ícono de candado -->
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                    </span>
+                    Fideicomiso de Naturaleza Irrevocable
+                </div>
+            </div>
+            
+            <!-- NOTA IMPORTANTE (Nueva sección solicitada y corregida) -->
+            <p class="text-sm main-text opacity-85 font-bold mb-2 mt-6 flex items-center justify-center">
+                <!-- Icono de Megaphone para "Nota Importante" -->
+                <svg class="w-4 h-4 mr-2 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882v10.236a2 2 0 002 2h3a2 2 0 002-2V7.882a2 2 0 00-2-2h-3a2 2 0 00-2 2zM4 12h.01M4 8h.01M4 16h.01M20 12h.01"></path></svg>
+                Nota Importante:
+            </p>
+            <p class="text-xs main-text opacity-60 mb-4">
+                Esta infografía es un resumen ejecutivo. Para una comprensión completa y la toma de decisiones, debe consultarse el texto íntegro del **Contrato de Fideicomiso**.
+            </p>
+            <!-- FIN NOTA IMPORTANTE -->
+
+            <div class="dark-card-bg p-4 mt-6 rounded-xl card-shadow mx-auto w-full max-w-sm">
+                <div class="flex flex-col items-center justify-center">
+                    <!-- Configuración del Logo doxus-logo.png -->
+                    <img src="doxus-logo.png" 
+                         alt="Logo de DOXUS" 
+                         class="h-8 mb-1"
+                         onerror="this.onerror=null; this.src='https://placehold.co/120x30/262a36/ffcc08?text=DOXUS';">
+                    <p class="text-xs dark-card-content-text opacity-70">
+                        Elaborado como resumen ejecutivo del Contrato de Fideicomiso.
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>
